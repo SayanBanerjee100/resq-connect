@@ -44,4 +44,41 @@ This project was built for **[ SIH 2025]** and aims to demonstrate the power of 
  
 
 ## 📂 Project Structure
+resq-connect/                  # Root folder (your repo name)
+│
+├── client/                    # React frontend
+│   ├── public/                # Public assets (favicon, manifest.json for PWA)
+│   ├── src/                   # Source code
+│   │   ├── components/        # Reusable UI components (Navbar, Buttons, Cards)
+│   │   ├── pages/             # Full pages (Login, SOSForm, Dashboard, MapView)
+│   │   ├── services/          # API calls (axios functions for backend)
+│   │   ├── context/           # Context API / state management
+│   │   ├── App.js             # Root React component
+│   │   └── index.js           # Entry point
+│   ├── package.json
+│   └── tailwind.config.js
+│
+├── server/                    # Node.js + Express backend
+│   ├── config/                # DB connection, environment config
+│   ├── controllers/           # Business logic (SOS, Users, Disaster APIs)
+│   ├── models/                # MongoDB schemas (User, SOS, Disaster, Resource)
+│   ├── routes/                # Express routes
+│   ├── middleware/            # Auth, role-based access, error handling
+│   ├── utils/                 # Helper functions (e.g., geo-calculations)
+│   ├── server.js              # Entry point for backend
+│   └── package.json
+│
+├── ai-api/ (optional)         # AI/ML Team’s Python API (Flask/FastAPI)
+│   ├── app.py                 # Exposes predictions to MERN backend
+│   └── requirements.txt
+│
+├── docs/                      # Documentation (presentation, diagrams, reports)
+│   ├── flowchart.png
+│   ├── architecture-diagram.png
+│   └── README.md (short overview for docs)
+│
+├── README.md                  # Project description (main entry for judges)
+├── .gitignore
+└── package.json (optional root if using monorepo setup)
+
 
