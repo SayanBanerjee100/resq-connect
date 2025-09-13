@@ -72,12 +72,12 @@ resq-connect/                  # Root folder (your repo name)
 │   ├── app.py                 # Exposes predictions to MERN backend
 │   └── requirements.txt
 │
-├── docs/                      # Documentation (presentation, diagrams, reports)
+├── docs/                      # Documentation
 │   ├── flowchart.png
 │   ├── architecture-diagram.png
 │   └── README.md (short overview for docs)
 │
-├── README.md                  # Project description (main entry for judges)
+├── README.md                  # Project description 
 ├── .gitignore
 └── package.json (optional root if using monorepo setup)
 
